@@ -56,8 +56,7 @@ LIKE '%a%';
 --* Dado que Postgres no guarda el orden de insert, simplemente mostré la segunda herramienta
 --* por orden de idherramienta.
 SELECT nombre FROM herramienta
-ORDER BY idherramienta
-desc limit 1 offset 2;
+WHERE idherramienta = 2;
 
 -- 12. Modifique los primeros 2 arriendos insertados con fecha 15/01/2020.
 --* Modifique la cantidad de días en los arriendos que cumplen las condiciones,
